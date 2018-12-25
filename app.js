@@ -10,6 +10,9 @@ app.get("/",function(req,res){
 app.get("/events",function(req,res){
     res.render("events");
 });
+app.get("/hackathon",function(req,res){
+    res.render("hackathon");
+});
 
 
 app.listen(3000,function(){
