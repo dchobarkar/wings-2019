@@ -15,7 +15,14 @@ app.get("/events",function(req,res){
 app.get("/hackathon",function(req,res){
     res.render("hackathon");
 });
-
+app.get("/makeathon",function(req,res){
+    res.render("makeathon");
+});app.get("/paperpresentation",function(req,res){
+    res.render("paperpresentation");
+});
+app.get("/workshop",function(req,res){
+    res.render("workshop");
+});
 
 app.listen(3000,function(){
     console.log("The Wings' Website has been started");
