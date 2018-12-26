@@ -19,95 +19,27 @@
   <section class="probootstrap_section" id="section-city-guides">
     <div class="container">
       <div class="row mb-3">
-        <div class="col-md-6">
-
-          <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-            <div class="probootstrap-media-image" style="background-image: url(assets/images/sq_img_2.jpg)">
-            </div>
-            <div class="media-body">
-              <h5 class="mb-3">Mall-Khamb</h5>
-              <p>This event will test your physical strength as well as chutiyappa stored in you for this whole time</p>
-            </div>
-          </div>
-
-          <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-            <div class="probootstrap-media-image" style="background-image: url(assets/images/sq_img_1.jpg)">
-            </div>
-            <div class="media-body">
-              <h5 class="mb-3">Treasure Hunt</h5>
-              <p>Are you an extrovert or introvert? Time to find out. Join us to find the treasure hidden in the GECA (Aukad Anusar).</p>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-6">
+        
           
+          <% events.forEach(function(events){ %>
+            <div class="col-md-6">  
           <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-            <div class="probootstrap-media-image" style="background-image: url(assets/images/sq_img_3.jpg)">
-            </div>
-            <div class="media-body">
-              <h5 class="mb-3">Web-Quest</h5>
-              <p>Honestly, if you are already tired to join a treasure hunt where you will only run for whole day. (If there is any girl participant with you then hell yaah), welcome to online tresasure hunt. Just seat and try to find the treasure on computer which will you do for your whole life</p>
+             <img class="probootstrap-media-image" src="<%= events.img %>">
+            <div class="media-body probootstrap-animate">
+              <h5 class="mb-3 probootstrap-animate"><%= events.name %></h5>
+              <h6 class="probootstrap-animate">Price Worth:</h6>
+              <p class="probootstrap-animate">Winner: Rs.<%= events.FP %>/-</p>
+              <p class="probootstrap-animate">1st Runnerup: Rs.<%= events.SP %>/-</p>
+              <p class="probootstrap-animate">2st Runnerup: Rs.<%= events.TP %>/-</p>
+              <p class="probootstrap-animate">
+                  <a href="#section-feature-testimonial" role="button" class="btn btn-primary p-3 mr-3 pl-5 pr-5 text-uppercase d-lg-inline d-md-inline d-sm-block d-block mb-3">About the Wings</a> 
+                </p>
             </div>
           </div>
-
-          <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-            <div class="probootstrap-media-image" style="background-image: url(assets/images/img_5.jpg)">
-            </div>
-            <div class="media-body">
-              <h5 class="mb-3">04. Service Title Here</h5>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            </div>
-          </div>
-
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6">
-
-          <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-            <div class="probootstrap-media-image" style="background-image: url(assets/images/img_1.jpg)">
-            </div>
-            <div class="media-body">
-              <h5 class="mb-3">01. Service Title Here</h5>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            </div>
-          </div>
-
-          <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-            <div class="probootstrap-media-image" style="background-image: url(assets/images/img_2.jpg)">
-            </div>
-            <div class="media-body">
-              <h5 class="mb-3">02. Service Title Here</h5>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-6">
           
-          <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-            <div class="probootstrap-media-image" style="background-image: url(assets/images/img_4.jpg)">
-            </div>
-            <div class="media-body">
-              <h5 class="mb-3">03. Service Title Here</h5>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            </div>
-          </div>
-
-          <div class="media probootstrap-media d-flex align-items-stretch mb-4 probootstrap-animate">
-            <div class="probootstrap-media-image" style="background-image: url(assets/images/img_5.jpg)">
-            </div>
-            <div class="media-body">
-              <h5 class="mb-3">04. Service Title Here</h5>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            </div>
-          </div>
-
-        </div>
+          <% }) %>
       </div>
-
     </div>
   </section>
 
