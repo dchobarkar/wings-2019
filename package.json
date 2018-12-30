@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/dchobarkar/wings#readme",
   "dependencies": {
+    "aws-sdk": "^2.382.0",
+    "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4"
   }
