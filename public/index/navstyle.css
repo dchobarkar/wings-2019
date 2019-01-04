@@ -2,11 +2,11 @@ html, body {
   height: 100%;
 }
 
-* {
+/* * {
   box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
 body {
   perspective-origin: 0% 50%;
@@ -71,7 +71,6 @@ nav {
   left: 0;
   bottom: 0;
   width: 16em;
-  background-color: #ffffff;
   transform: translateX(-16em);
 }
   nav.menu-active {
@@ -85,17 +84,16 @@ nav {
     display: block;
     position: absolute;
     top: 0;
-    right: -65px;
-    height: 60px;
-    width: 65px;
+    right: -100px;
+    height: 70px;
+    width: 100px;
     line-height: 60px;
     font-size: 0.8em;
     font-weight: 300;
     letter-spacing: 1px;
-    color: #fff;
     text-transform: uppercase;
     text-align: center;
-    background-color: #353441;
+    background-color: #ffffff;
     cursor: pointer;
   }
   nav h1:hover {
@@ -120,7 +118,7 @@ nav {
     background-color: #ffffff;
   }
   nav li:hover {
-    background: ORANGERED;
+    background: #353441;
     color: white;
   }
   
@@ -135,7 +133,7 @@ main {
   align-items: center;
   overflow: hidden;
   transform-origin: 0% 50%;
-  background-color: #353441;
+  background-image: url(/assets/images/darkocean.jpg);
 }
   main:after {
     content: '';
@@ -160,3 +158,103 @@ main {
   transform: translateX(1em) rotateY(1deg);
 }
 
+
+.button {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+border-radius:20%;
+}
+
+.button:hover {
+  background-color: #555555;
+  color: white;
+}
+.button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+
+/*Bounce*/
+@keyframes kreep {
+  0% {-webkit-transform: scale(1.1,.9);
+      transform: scale(1.1,.9);}
+ 50% { -webkit-transform: scale(.9,1.1) translateY(-.5rem)}
+ 70% { -webkit-transform: scale(1);
+       transform: scale(1);}
+}
+
+h1.kreep {
+display: inline-block;
+/*name-duration-function(ease,eas-in,linear)-delay-count-direction */
+animation: kreep 0.7s ease 0.5s infinite alternate;
+}
+
+h1.kreep:hover {
+animation: none;
+}
+/*END BOUNCER*/
+
+/*SHAKER*/
+@keyframes wiggle {
+2% {
+  -webkit-transform: translateX(3px) rotate(2deg);
+  transform: translateX(3px) rotate(2deg);
+}
+4% {
+  -webkit-transform: translateX(-3px) rotate(-2deg);
+  transform: translateX(-3px) rotate(-2deg);
+}
+6% {
+  -webkit-transform: translateX(3px) rotate(2deg);
+  transform: translateX(3px) rotate(2deg);
+}
+8% {
+  -webkit-transform: translateX(-3px) rotate(-2deg);
+  transform: translateX(-3px) rotate(-2deg);
+}
+10% {
+  -webkit-transform: translateX(2px) rotate(1deg);
+  transform: translateX(2px) rotate(1deg);
+}
+12% {
+  -webkit-transform: translateX(-2px) rotate(-1deg);
+  transform: translateX(-2px) rotate(-1deg);
+}
+14% {
+  -webkit-transform: translateX(2px) rotate(1deg);
+  transform: translateX(2px) rotate(1deg);
+}
+16% {
+  -webkit-transform: translateX(-2px) rotate(-1deg);
+  transform: translateX(-2px) rotate(-1deg);
+}
+18% {
+  -webkit-transform: translateX(1px) rotate(0);
+  transform: translateX(1px) rotate(0);
+}
+20% {
+  -webkit-transform: translateX(-1px) rotate(0);
+  transform: translateX(-1px) rotate(0);
+}
+}
+
+h1.wiggle {
+display: inline-block;
+animation: wiggle 2.7s infinite;
+}
+
+h1.wiggle:hover {
+animation: none;
+}
+/*END SHAKER*/

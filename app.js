@@ -26,8 +26,52 @@ app.get("/makeathon",function(req,res){
 app.get("/workshop",function(req,res){
     res.render("workshop");
 });
+app.get("/contact",function(req,res){
+    res.render("contact");
+});
 
-// app.listen(process.env.PORT, process.env.IP, function(){
-app.listen(3000, function(){
+
+app.get("/events/smartcitydesign",function(req,res){
+    res.render("events/smartcitydesign");
+});
+app.get("/events/surveying",function(req,res){
+    res.render("events/surveying");
+});
+app.get("/events/epitome",function(req,res){
+    res.render("events/epitome");
+});
+app.get("/events/electrobuzz",function(req,res){
+    res.render("events/electrobuzz");
+});
+app.get("/events/lathewar",function(req,res){
+    res.render("events/lathewar");
+});
+app.get("/events/nitroracing",function(req,res){
+    res.render("events/nitroracing");
+});
+app.get("/events/codingkbc",function(req,res){
+    res.render("events/codingkbc");
+});
+app.get("/events/codedate",function(req,res){
+    res.render("events/codedate");
+});
+app.get("/events/virtualcampus",function(req,res){
+    res.render("events/virtualcampus");
+});
+app.get("/events/energycontraption",function(req,res){
+    res.render("events/energycontraption");
+});
+app.get("/events/pickorun",function(req,res){
+    res.render("events/pickorun");
+});
+app.get("/events/cadster",function(req,res){
+    res.render("events/cadster");
+});
+app.get("/events/webquest",function(req,res){
+    res.render("events/webquest");
+});
+
+app.listen(process.env.PORT, process.env.IP, function(){
+// app.listen(3000, function(){
     console.log("The Wings' Website has been started");
 });
