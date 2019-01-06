@@ -9,10 +9,9 @@ app.use(express.static("public"));
 
 
 app.get("/",function(req,res){
-    res.render("index");
+    res.render("landing");
 });
 app.get("/events",function(req,res){
-    
     res.render("events");
 });
 app.get("/hackathon",function(req,res){
@@ -20,7 +19,8 @@ app.get("/hackathon",function(req,res){
 });
 app.get("/makeathon",function(req,res){
     res.render("makeathon");
-});app.get("/paperpresentation",function(req,res){
+});
+app.get("/paperpresentation",function(req,res){
     res.render("paperpresentation");
 });
 app.get("/workshop",function(req,res){
@@ -29,7 +29,6 @@ app.get("/workshop",function(req,res){
 app.get("/contact",function(req,res){
     res.render("contact");
 });
-
 
 app.get("/events/smartcitydesign",function(req,res){
     res.render("events/smartcitydesign");
@@ -71,6 +70,15 @@ app.get("/events/webquest",function(req,res){
     res.render("events/webquest");
 });
 
+app.get("/workshop/photoshop",function(req,res){
+    res.render("workshop/photoshop");
+});
+app.get("/workshop/systemadministration",function(req,res){
+    res.render("workshop/systemadministration");
+});
+app.get("/workshop/iot",function(req,res){
+    res.render("workshop/iot");
+});
 app.listen(process.env.PORT, process.env.IP, function(){
 // app.listen(3000, function(){
     console.log("The Wings' Website has been started");
