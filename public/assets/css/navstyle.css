@@ -1,67 +1,58 @@
-
-.nav-up {
+/* .nav-up {
     top: -40px;
-}
-li {
+} */
+li{
     list-style: none;
 }
- 
- 
 /*------------------------ 2 Home ------------------------*/
-
 .main {
     background: url(/assets/images/darkocean.jpg) no-repeat;
     background-size: cover;
     display: table;
     width: 100%;
     position: relative;
-}
-
-.main:after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    left: 0;
-    z-index: -1;
-    opacity: .85;
-    position: absolute;
-     
-}
-    .nav-icon{
-        margin-left: 990px;
-        margin-top: -540px;
+}.main:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        z-index: -1;
+        opacity: .85;
+        position: absolute;
     }
-.main-title {
+/* .main-title {
     font-size: 24px;
     line-height: 28px;
     color: #fff;
     font-weight: 400;
-}
-
-.hello {
+} */
+/* .nav-icon{
+    margin-left: 990px;
+    margin-top: -540px;
+} */
+/* .hello {
     color: #fff;
     line-height: 51px;
-}
-
-.main-content {
+} */
+/* .main-content {
     padding: 0 0px;
     vertical-align: middle;
     display: table-cell;
     height: 100%;
     width: 100%;
-}
+} */
 
-    .logo a{
+    /* .logo a{
         color: orange;
         margin-left: 30px;         
         border: 1px solid white;
         background: white;
         font-size: 30px;
     }
-  
-    .logo a:hover{
+   */
+    /* .logo a:hover{
         text-decoration: none;
-    }
+    } */
 
 /*------------------------ 2.1 Full Menu ------------------------*/
 
@@ -100,10 +91,9 @@ li {
     transform: scale(0);
     visibility: 0s 0.3s; 
     opacity: 0.3s 0s;
-     
+    
     transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
 }
-
 .no-touch .full-menu .modal-close:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -226,10 +216,10 @@ li {
     line-height: 50px;
     margin-left: -25px;
 }
-
+/* 
 .page-menu li:last-child {
-    line-height: 90px;
-}
+     line-height: 90px; 
+} */
 
 .page-menu li a {
     color: #fff;
@@ -238,12 +228,12 @@ li {
     font-weight: 500;
      
 }
-
+/* 
 .social img {
     width: 15px;
-}
+} */
 
-.main .social {
+/* .main .social {
     margin-top: 30px;
 }
 
@@ -258,7 +248,7 @@ li {
 
 .social a:last-child {
     margin-right: 0px;
-}
+} */
 
  
  
@@ -313,8 +303,3 @@ header {
 .nav-icon:hover span:nth-child(3) {
     width: 100%;
 }
-
-
-
-
-
