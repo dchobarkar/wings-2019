@@ -26,6 +26,9 @@ app.get("/paperpresentation",function(req,res){
 app.get("/workshop",function(req,res){
     res.render("workshop");
 });
+app.get("/accomodation",function(req,res){
+    res.render("accomodation");
+});
 app.get("/contact",function(req,res){
     res.render("contact");
 });

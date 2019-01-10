@@ -131,7 +131,7 @@ animate();
 
 function init() {
   camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 10000 );
-  camera.position.z = 3000;
+  camera.position.z = 850;
   
   scene = new THREE.Scene();
   
@@ -214,33 +214,21 @@ function init() {
   
   //
   controls = new THREE.TrackballControls( camera, renderer.domElement );
-  controls.rotateSpeed = 50;
+  controls.rotateSpeed = 0.5;
   controls.minDistance = 500;
   controls.maxDistance = 6000;
   controls.addEventListener( 'change', render );
   
-  // var button = document.getElementById( 'table' );
-  // button.addEventListener( 'click', function () {
   //   transform( targets.table, 2000 );
-  // }, false );
   
-  // var button = document.getElementById( 'sphere' );
-  // button.addEventListener( 'click', function () {
   //   transform( targets.sphere, 2000 );
-  // }, false );
   
-  // var button = document.getElementById( 'helix' );
-  // button.addEventListener( 'click', function () {
   //   transform( targets.helix, 2000 );
-  // }, false );
   
-  // var button = document.getElementById( 'grid' );
-  // button.addEventListener( 'click', function () {
   //   transform( targets.grid, 2000 );
-  // }, false );
-  for( var i = 0;i<999;i++){
+
     transform( targets.sphere, 2000 );
-  }
+
   //
   window.addEventListener( 'resize', onWindowResize, false );
 }
