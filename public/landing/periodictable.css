@@ -1,12 +1,7 @@
-#landing{
-    
-}
 #wings{
     position: fixed;
     left: 0px;
-    top: 40%;
-    z-index: -1;
-    background-color: blue;
+    top: 42%;
 }#wings h2{
         color:black; 
         font-family:heart_breaking_badregular;
@@ -15,11 +10,9 @@
  #wings p{
         color:black; font-family: Montserrat;
     }
-#menu {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
+    
+.main{
+    background-image: url(../assets/images/darkocean.jpg);
 }
 
 .element {

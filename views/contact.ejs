@@ -1,76 +1,84 @@
 <% include partials/header%>
 
-<!-- Contact -->
-<section class="probootstrap_section bg-light" id="section-contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 align-items-center probootstrap-animate">
-              <div class="row">
-                
-                <div class="col-md-6">
-                  <ul class="probootstrap-contact-details">
-                    <li>
-                      <span class="text-uppercase"><span class="ion-paper-airplane"></span> Email</span>
-                      geca.wings@gmail.com
-                    </li>
-                    
-                    <li>
-                      <span class="text-uppercase"><span class="ion-ios-telephone"></span> Phone</span>
-                      +0240 - 2366 350
-                    </li>
-                  </ul>
-                </div>
+
+<section class="probootstrap_section bg-light">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-6 align-items-center probootstrap-animate">
+        <div class="row">
+          
+          <div class="col-md-6">
+            <ul class="probootstrap-contact-details">
+              <li>
+                <span class="text-uppercase"><span class="ion-paper-airplane"></span> Email</span>
+                  geca.wings@gmail.com
+              </li>
+              <li>
+                <span class="text-uppercase"><span class="ion-ios-telephone"></span> Phone</span>
+                  +0240 - 2366 350
+              </li>
+            </ul>
+          </div>
                       
-                <div class="col-md-6">
-                  <ul class="probootstrap-contact-details">
-                    <li>
-                      <span class="text-uppercase"><span class="ion-location"></span> Address</span>
-                      Government College of Engineering Aurangabad, <br>
-                      Railway Station Road, Aurangabad <br>
-                      Maharashtra, India
-                    </li>
-                  </ul>
-                </div>
+          <div class="col-md-6">
+            <ul class="probootstrap-contact-details">
+              <li>
+                <span class="text-uppercase"><span class="ion-location"></span> Address</span>
+                Government College of Engineering Aurangabad, <br>
+                Railway Station Road, Aurangabad <br>
+                Maharashtra, India
+              </li>
+            </ul>
+          </div>
+
+          <div id="map" class="col-md-12 probootstrap-animate">
+            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Government%20College%20of%20Engineering%20Aurangabad&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="col-md-6  probootstrap-animate">
+        <form action="mailto:geca.wings@gmail.com" method="post" enctype="text/plain" class="probootstrap-form probootstrap-form-box mb60">
+          <div class="row mb-3">
+            
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="Name" class="sr-only sr-only-focusable">First Name</label>
+                <input type="text" class="form-control" id="Name" name="Name" placeholder="First Name">
               </div>
             </div>
             
-            <div class="col-md-6  probootstrap-animate">
-              <form action="mailto:geca.wings@gmail.com" method="post" enctype="text/plain" class="probootstrap-form probootstrap-form-box mb60">
-                <div class="row mb-3">
-                  
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="fname" class="sr-only sr-only-focusable">First Name</label>
-                      <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">
-                    </div>
-                  </div>
-                  
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="lname" class="sr-only sr-only-focusable">Last Name</label>
-                      <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="form-group">
-                  <label for="email" class="sr-only sr-only-focusable">Email</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-                </div>
-                
-                <div class="form-group">
-                  <label for="message" class="sr-only sr-only-focusable">Message</label>
-                  <textarea cols="30" rows="10" class="form-control" id="message" name="message" placeholder="Write your message"></textarea>
-                </div>
-                
-                <div class="form-group">
-                  <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Send Message">
-                </div>
-              </form>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="Last Name" class="sr-only sr-only-focusable">Last Name</label>
+                  <input type="text" class="form-control" id="Last Name" name="Last Name" placeholder="Last Name">
+              </div>
             </div>
+
           </div>
-        </div>
-      </section>
-      
+          
+          <div class="form-group">
+            <label for="email" class="sr-only sr-only-focusable">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+          </div>
+                
+          <div class="form-group">
+            <label for="message" class="sr-only sr-only-focusable">Message</label>
+            <textarea cols="30" rows="10" class="form-control" id="message" name="message" placeholder="Write your message"></textarea>
+          </div>
+                
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary" id="submit" name="submit" value="Send Message">
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <% include partials/footer%>

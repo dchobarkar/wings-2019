@@ -1,4 +1,4 @@
-.nav-icon {
+.nav-icon{
     width: 23px;
     height: 18px;
     position: relative;    
@@ -6,7 +6,7 @@
     transition: .5s ease-in-out;
     cursor: pointer;
     margin-top: 7px; 
-}.nav-icon span {
+}.nav-icon span{
         display: block;
         position: absolute;
         height: 2px;
@@ -15,7 +15,7 @@
         opacity: 1;    
         transform: rotate(0deg);   
         transition: .25s ease-in-out;
-    }.nav-icon span:nth-child(1) {
+    }.nav-icon span:nth-child(1){
             top: 0px;     
             transform-origin: left center;
         }
@@ -64,7 +64,7 @@
         opacity: 0.3s 0s;
         transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
     }
-    .full-menu.visible {
+ .full-menu.visible {
         background-size: 100%;
         opacity: 1;
         visibility: visible;   
@@ -112,7 +112,9 @@
             font-size: 26px;
             position: relative;
             font-weight: 500;
-        }
+        }.page-menu li a img{
+                height:80px; width:130px;
+            }
 
 header {
     position: fixed;

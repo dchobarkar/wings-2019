@@ -17,7 +17,7 @@ html {
   font-size: 1em; 
 }
 body {
-  font-family: "Work Sans", Arial, sans-serif; 
+  font-family: "Work Sans", Arial, sans-serif;
 }
 
 input, textarea, p {
@@ -46,6 +46,31 @@ a{
 
 #section-feature-testimonial blockquote p {
   color: #000; 
+}
+
+#eventslist img{
+  height:100%;
+}
+
+#individualevent{
+  background-image:url(/assets/images/neonlife.jpg);
+}
+
+#hackathon{
+  background-image:url(/assets/images/hackathonbackground.png);
+}#hackathon h2{
+  font-family: heart_breaking_badregular;
+}
+
+#makeathon{
+  background-image: url(/assets/images/makeathonbackground.jpg);
+}#makeathon h2{
+  font-family: heart_breaking_badregular;
+}
+
+#map iframe{
+  height:300px;
+  width: 100%; 
 }
 
 .probootstrap-cover {
@@ -203,7 +228,7 @@ a{
   }
 
 .probootstrap-section-half {
-  float: left;
+  /* float: left; */
   width: 100%; 
 }.probootstrap-section-half .probootstrap-image, .probootstrap-section-half .probootstrap-text {
     width: 50%; 
@@ -236,7 +261,6 @@ a{
 
 .probootstrap_section {
   padding: 7em 0;
-  float: left;
   width: 100%; 
 }.probootstrap_section.bg-light {
     background: #ECECEC !important; 
