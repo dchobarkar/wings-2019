@@ -86,6 +86,9 @@ app.get("/workshop/iot",function(req,res){
     res.render("workshop/iot");
 });
 
+app.get("/informals/treasurehunt",function(req,res){
+    res.render("informals/treasurehunt");
+});
 
 // app.listen(process.env.PORT, process.env.IP, function(){
 app.listen(3000, function(){

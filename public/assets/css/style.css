@@ -17,6 +17,7 @@ html {
   font-size: 1em; 
 }
 body {
+  overflow-x: hidden;
   font-family: "Work Sans", Arial, sans-serif;
 }
 
@@ -65,6 +66,30 @@ a{
 #makeathon{
   background-image: url(/assets/images/makeathonbackground.jpg);
 }#makeathon h2{
+  font-family: heart_breaking_badregular;
+}
+
+#paperpresentation{
+  background-image: url(/assets/images/paperpresentationbackground.jpg);
+}#paperpresentation h2{
+  font-family: heart_breaking_badregular;
+}
+
+#workshop{
+  background-image: url(/assets/images/workshopbackground.jpg);
+}#workshop h2{
+  font-family: heart_breaking_badregular;
+}
+
+#informals{
+  background-image: url(/assets/images/informalsbackground.jpg);
+}#informals h2{
+  font-family: heart_breaking_badregular;
+}
+
+#accomodation{
+  background-image:url(/assets/images/neonlife.jpg);  
+}#accomodation h2{
   font-family: heart_breaking_badregular;
 }
 
