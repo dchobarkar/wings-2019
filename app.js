@@ -85,6 +85,12 @@ app.get("/workshop/systemadministration",function(req,res){
 app.get("/workshop/iot",function(req,res){
     res.render("workshop/iot");
 });
+app.get("/workshop/cnc",function(req,res){
+    res.render("workshop/cnc");
+});
+app.get("/workshop/rcracing",function(req,res){
+    res.render("workshop/rcracing");
+});
 
 app.get("/informals/treasurehunt",function(req,res){
     res.render("informals/treasurehunt");
