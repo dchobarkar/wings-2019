@@ -95,6 +95,10 @@ app.get("/workshop/rcracing",function(req,res){
 app.get("/informals/treasurehunt",function(req,res){
     res.render("informals/treasurehunt");
 });
+app.get("/informals/jugaad",function(req,res){
+    res.render("informals/jugaad");
+});
+
 
 // app.listen(process.env.PORT, process.env.IP, function(){
 app.listen(3000, function(){
