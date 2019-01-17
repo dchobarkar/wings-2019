@@ -35,6 +35,9 @@ app.get("/accomodation",function(req,res){
 app.get("/contact",function(req,res){
     res.render("contact");
 });
+app.get("/team",function(req,res){
+    res.render("team");
+});
 
 app.get("/events/smartcitydesign",function(req,res){
     res.render("events/smartcitydesign");
@@ -98,7 +101,9 @@ app.get("/informals/treasurehunt",function(req,res){
 app.get("/informals/jugaad",function(req,res){
     res.render("informals/jugaad");
 });
-
+app.get("/informals/pubg",function(req,res){
+    res.render("informals/pubg");
+});
 
 // app.listen(process.env.PORT, process.env.IP, function(){
 app.listen(3000, function(){
