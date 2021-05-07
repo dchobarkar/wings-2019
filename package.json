@@ -1,21 +1,19 @@
 {
-  "name": "wings",
+  "name": "wings_2019",
   "version": "1.0.0",
-  "description": "Official Wings 2019 Website",
+  "description": "Official website for technical symposium 2019 of Government College of Engineering, Aurangabad",
+  "keywords": ["GECA", "Wings","Aurangabad","Technical Event","Symposium"],
+  "author": "Darshan Chobarkar",
+  "email":"dchobarkar@gmail.com",
   "main": "app.js",
+
   "scripts": {
+    "start":"node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dchobarkar/wings.git"
-  },
-  "author": "Darshan Chobarkar",
+
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dchobarkar/wings/issues"
-  },
-  "homepage": "https://github.com/dchobarkar/wings#readme",
+
   "dependencies": {
     "aws-sdk": "^2.382.0",
     "body-parser": "^1.18.3",
