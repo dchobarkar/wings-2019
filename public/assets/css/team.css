@@ -1,17 +1,17 @@
-#team{
-    background-image: url(https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=044e5d85cd16e79671287971a06be066&auto=format&fit=crop&w=500&q=60);
+#team {
+  background-image: url(https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=044e5d85cd16e79671287971a06be066&auto=format&fit=crop&w=500&q=60);
 }
-    #team div.container{
-      display:table-cell;
-      vertical-align: middle;
-    }
+#team div.container {
+  display: table-cell;
+  vertical-align: middle;
+}
 
-.col-lg-3{
+.col-lg-3 {
   margin: 10px auto;
 }
 
 .card {
-  font-family: 'Quattrocento', Arial, sans-serif;
+  font-family: "Quattrocento", Arial, sans-serif;
   position: relative;
   min-width: 230px;
   max-width: 315px;
@@ -21,64 +21,65 @@
   font-size: 12px;
   background-color: black;
 }
-  .card * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .card img {
-    max-width: 100%;
-    height: 220px;
-    vertical-align: top;
-  }
-  .card figcaption {
-    background-color: #ffffff;
-    padding-bottom: 50px;
-    position: relative;
-    }
-    .card figcaption:before {
-      position: absolute;
-      content: '';
-      z-index: 2;
-      bottom: 100%;
-      left: 0;
-      width: 100%;
-      height: 80px;
-      background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
-      background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
-    }
-  
-  .card h2, .card p {
-    margin: 0 0 10px;
-  }
-  .card h2 {
-    font-weight: 300;
-    font-size: 1.5em;
-    line-height: 1.2em;
-    font-family: 'Oswald', Arial, sans-serif;
-    text-transform: uppercase;
-  }
-  .card p {
-    font-size: 0.9em;
-    letter-spacing: 1px;
-    opacity: 0.9;
-  }
-  .card .icons {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: #e6e6e6;
-    width: 100%;
-    text-align: center;
-  }
-  .card i {
-    padding: 10px 5px;
-    display: inline-block;
-    font-size: 24px;
-    color: #141414;
-    opacity: 0.65;
-    }
-    .card i:hover {
-      opacity: 1;
-      -webkit-transition: all 0.35s ease;
-      transition: all 0.35s ease;
-    }
+.card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.card img {
+  max-width: 100%;
+  height: 220px;
+  vertical-align: top;
+}
+.card figcaption {
+  background-color: #ffffff;
+  padding-bottom: 50px;
+  position: relative;
+}
+.card figcaption:before {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+
+.card h2,
+.card p {
+  margin: 0 0 10px;
+}
+.card h2 {
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-family: "Oswald", Arial, sans-serif;
+  text-transform: uppercase;
+}
+.card p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.card .icons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #e6e6e6;
+  width: 100%;
+  text-align: center;
+}
+.card i {
+  padding: 10px 5px;
+  display: inline-block;
+  font-size: 24px;
+  color: #141414;
+  opacity: 0.65;
+}
+.card i:hover {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}

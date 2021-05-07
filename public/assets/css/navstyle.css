@@ -1,184 +1,191 @@
-.nav-icon{
-    width: 23px;
-    height: 18px;
-    position: relative;    
-    transform: rotate(0deg);     
-    transition: .5s ease-in-out;
-    cursor: pointer;
-    margin-top: 7px; 
-}.nav-icon span{
-        display: block;
-        position: absolute;
-        height: 2px;
-        width: 100%;
-        background: #000;
-        opacity: 1;    
-        transform: rotate(0deg);   
-        transition: .25s ease-in-out;
-    }.nav-icon span:nth-child(1){
-            top: 0px;     
-            transform-origin: left center;
-        }
-     .nav-icon span:nth-child(2) {
-            top: 6px;    
-            transform-origin: left center;
-        }
-     .nav-icon span:nth-child(3) {
-            top: 12px;     
-            transform-origin: left center;
-            width: 60%;
-            right: 0 !important;
-        }.nav-icon:hover span:nth-child(3) {
-                width: 100%;
-            }
+.nav-icon {
+  width: 23px;
+  height: 18px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  margin-top: 7px;
+}
+.nav-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #000;
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+.nav-icon span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+.nav-icon span:nth-child(2) {
+  top: 6px;
+  transform-origin: left center;
+}
+.nav-icon span:nth-child(3) {
+  top: 12px;
+  transform-origin: left center;
+  width: 60%;
+  right: 0 !important;
+}
+.nav-icon:hover span:nth-child(3) {
+  width: 100%;
+}
 
 .full-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background-size: cover;
-    opacity: 0;
-    visibility: hidden;   
-    transition: opacity 0.3s 0s, visibility 0s 0.3s;
-}.full-menu .modal-close {
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        padding: 50px;
-        height: 45px;
-        width: 45px;
-        border-radius: 50%;
-        background: url(/assets/images/cd-icon-close.svg)no-repeat center center;
-        overflow: hidden;
-        text-indent: 100%;
-        white-space: nowrap;
-        visibility: hidden;
-        opacity: 0;     
-        transform: scale(0);
-        visibility: 0s 0.3s; 
-        opacity: 0.3s 0s;
-        transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
-    }
- .full-menu.visible {
-        background-size: 100%;
-        opacity: 1;
-        visibility: visible;   
-        transition: opacity 0.7s, visibility 0s;
-    }.full-menu.visible .fullmenu-content {
-            -webkit-overflow-scrolling: touch;
-        }
-     .full-menu.visible .modal-close {
-            visibility: visible;
-            opacity: 1;    
-            transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;     
-            transform: scale(1);
-        }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+.full-menu .modal-close {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding: 50px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: url(/assets/images/cd-icon-close.svg) no-repeat center center;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  visibility: 0s 0.3s;
+  opacity: 0.3s 0s;
+  transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+}
+.full-menu.visible {
+  background-size: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.7s, visibility 0s;
+}
+.full-menu.visible .fullmenu-content {
+  -webkit-overflow-scrolling: touch;
+}
+.full-menu.visible .modal-close {
+  visibility: visible;
+  opacity: 1;
+  transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+  transform: scale(1);
+}
 
 @media only screen and (min-width: 1100px) {
-    .full-menu .fullmenu-content {
-        padding: 6em 5%;
-    }
-    .full-menu .modal-close {
-        height: 60px;
-        width: 60px;
-    }
-    .full-menu p {
-        font-size: 25px;
-    }
+  .full-menu .fullmenu-content {
+    padding: 6em 5%;
+  }
+  .full-menu .modal-close {
+    height: 60px;
+    width: 60px;
+  }
+  .full-menu p {
+    font-size: 25px;
+  }
 }
 
 .full-menu .fullmenu-content {
-    height: 100%;
-    width: 100%;
-    display: table;
+  height: 100%;
+  width: 100%;
+  display: table;
 }
 .page-menu {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}.page-menu li {
-        /* line-height: 50px; */
-        margin-left: -25px;
-        list-style: none;
-        font-family:heart_breaking_badregular;
-
-    }.page-menu li a {
-            color: #fff;
-            font-size: 26px;
-            position: relative;
-            font-weight: 500;
-        }.page-menu li a img{
-                height:80px; width:130px;
-            }
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.page-menu li {
+  /* line-height: 50px; */
+  margin-left: -25px;
+  list-style: none;
+  font-family: heart_breaking_badregular;
+}
+.page-menu li a {
+  color: #fff;
+  font-size: 26px;
+  position: relative;
+  font-weight: 500;
+}
+.page-menu li a img {
+  height: 80px;
+  width: 130px;
+}
 
 header {
-    position: fixed;
-    padding: 30px;
-    top: 0;
-    width: 100%;
-    z-index: 2;
+  position: fixed;
+  padding: 30px;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .cd-transition-layer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    overflow: hidden;
-}.cd-transition-layer .bg-layer {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        -webkit-transform: translateY(-50%) translateX(-2%);   
-        transform: translateY(-50%) translateX(-2%);     
-        height: 100%;
-        /* our sprite is composed of 25 frames */
-        width: 2500%;
-        background: url(/assets/images/ink.png) no-repeat 0 0;
-        background-size: 100% 100%;
-    }
- .cd-transition-layer.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-
-.cd-transition-layer.opening .bg-layer {     
-    animation: cd-sequence 1.0s steps(24);     
-    animation-fill-mode: forwards;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
 }
-.cd-transition-layer.closing .bg-layer {     
-    animation: cd-sequence-reverse 1.0s steps(24);    
-    animation-fill-mode: forwards;
+.cd-transition-layer .bg-layer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-2%);
+  transform: translateY(-50%) translateX(-2%);
+  height: 100%;
+  /* our sprite is composed of 25 frames */
+  width: 2500%;
+  background: url(/assets/images/ink.png) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+.cd-transition-layer.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cd-transition-layer.opening .bg-layer {
+  animation: cd-sequence 1s steps(24);
+  animation-fill-mode: forwards;
+}
+.cd-transition-layer.closing .bg-layer {
+  animation: cd-sequence-reverse 1s steps(24);
+  animation-fill-mode: forwards;
 }
 
 .no-cssanimations .cd-transition-layer {
-    display: none;
+  display: none;
 }
 
 @keyframes cd-sequence {
-    0% {
-        transform: translateY(-50%) translateX(-2%);
-    }
-    100% {        
-        transform: translateY(-50%) translateX(-98%);
-    }
+  0% {
+    transform: translateY(-50%) translateX(-2%);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-98%);
+  }
 }
 @keyframes cd-sequence-reverse {
-    0% {
-         
-        transform: translateY(-50%) translateX(-98%);
-    }
-    100% {
-         
-        transform: translateY(-50%) translateX(-2%);
-    }
+  0% {
+    transform: translateY(-50%) translateX(-98%);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-2%);
+  }
 }
