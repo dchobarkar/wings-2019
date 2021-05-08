@@ -3,11 +3,11 @@
   Digital interface of the technical symposium.  
   
 ### Technology Stack
-  HTML  
-  CSS  
-  Bootstrap  
-  JavaScript  
-  Based on Express Framework
+ * HTML  
+ * CSS  
+ * Bootstrap  
+ * JavaScript  
+ * Based on Express Framework
   
 ### Installation
     $ npm install
