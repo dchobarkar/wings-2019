@@ -20,5 +20,5 @@
   Click on the event to get more information.
   
 ### Credits  
-* Author - [Darshan Chobarkar](www.linkedin.com/in/dchobarkar)
+* Author - [Darshan Chobarkar](https://www.linkedin.com/in/dchobarkar/)
 * Designer - [Prathmesh Chaudhari](https://www.linkedin.com/in/prathmesh-chaudhari/)
